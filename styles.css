@@ -1,0 +1,146 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333; /* Dark grey text */
+  background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Page shell */
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero section */
+.hero {
+  background-color: #e0e0e0; /* Medium grey */
+  padding: 60px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-copy {
+  flex: 1;
+}
+
+.eyebrow {
+  color: #007bff; /* Blue */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555; /* Medium grey */
+}
+
+.button {
+  display: inline-block;
+  background-color: #007bff; /* Blue */
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+.hero-visual {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-visual img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content section */
+.content-section {
+  padding: 60px 0;
+  background-color: #ffffff; /* White */
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.feature h2 {
+  color: #007bff; /* Blue */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.feature ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature li:before {
+  content: "✓";
+  color: #007bff; /* Blue */
+  position: absolute;
+  left: 0;
+}
+
+.feature p {
+  color: #555; /* Medium grey */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
